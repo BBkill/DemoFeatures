@@ -1,0 +1,14 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="changelog/20220112-1703-user.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/20220112-1712-role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/20220112-1716-user-role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/20220119-0841-load-data-to-roles-table.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>

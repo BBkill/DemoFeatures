@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  mysql-db:
+    image: mysql:latest
+    container_name: failwall-db
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - failwall_db_data:/var/lib/mysql
+    ports:
+      - 3308:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: Aibles_backend@2022
+      MYSQL_DATABASE: failwall
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: Aibles@2022
+    restart: always
+
+volumes:
+  failwall_db_data: {}
